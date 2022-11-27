@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>My Projects</title>  
+  <!-- add css in <style> including margins, padding, colours and flex-->
+  <style>
+  html {
+    background-color: rgb(144, 227, 154);
+    font-family: helvetica;
+  }
+    
+    body > *, main > * {
+      outline: 1px #ccc solid;} 
+    * { 
+      padding: 10px;
+    } 
+ nav {background-color: #ccc;}
+ header, 
+ footer { 
+  text-align: center; 
+  background: #d468b9; 
+  color: white;
+} 
+main {
+  background-color: grey;
+}
+button {
+  width: 100%;
+}
+    body, section {
+      background-color: white; 
+      margin: 5px;
+    }  
+    img {
+      background-color: #ccc;
+      padding: 0;
+    } 
+    h1 {
+      margin: 0;
+    } 
+    nav {
+      padding: 5px 2px;
+    }
+    nav a {
+      margin: 0 5px; 
+      background-color: white; 
+      color: #110f6a; 
+      text-align: center; 
+      text-decoration: none; 
+      border: 1px solid #333;
+    }
+
+      section > button,
+      section > a {
+      background: linear-gradient(#ccc, #fff);
+      border: 1px solid #ccc;
+      text-decoration: none;
+      color: #666;
+      font-size: 0.75rem;
+      text-align: center;
+      display:inline-block;
+      box-sizing: border-box;
+    }
+
+      nav {
+        display: flex;
+      }
+      section > img, 
+      section > button,
+      section > a {
+        width: 100%; 
+      }
+      nav a {
+        flex: 1; 
+      }
+
+  @media screen and (min-width: 40em) {
+    body, 
+    main, 
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main > section, 
+    main > section > p {
+      flex: 1;
+    }
+    header, nav {
+      order: -1;
+    }
+    main {
+      flex-direction: row;
+      border-bottom: 0.5rem solid;
+    }
+    main > section {
+      margin: 10px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header><h1>Project Gallery</h1></header>
+  <main>
+      <section>
+        <img src="/img/Hobby screenshot.png" alt="Screenshot of my hobby page" width="350" height="200"/>
+        <button onclick="doSomething()", ondblclick="close">Description</button>
+
+        <p id="desc1">Click the Description button above to show the description</p>
+    
+        <script>
+            function doSomething(){
+                document.getElementById("desc1").innerHTML = "On my hobby page i show you some spooky lakes from around the world.";
+            }
+        </script>
+      </section>
+      <section>
+        <img src="/img/comment box screenshot.png" alt="Screenshot of my comment box page" width="350" height="200"/>
+        <button onclick="doSomething2()">Description</button>
+
+        <p id="desc2">Click the Description button above to show the description</p>
+    
+        <script>
+            function doSomething2(){
+                document.getElementById("desc2").innerHTML = "Check out my comment box which allows you to input some data.";
+            }
+        </script>
+      </section>
+      <section>
+        <img src="/img/moveidata screenshot.png" alt="Screenshot of my moviedata page" width="350" height="200"/>
+        <button onclick="doSomething3()">Description</button>
+
+        <p id="desc3">Click the Description button above to show the description</p>
+    
+        <script>
+            function doSomething3(){
+                document.getElementById("desc3").innerHTML = "Here you will find a selection of my favourite films by Wes Anderson";
+            }
+        </script>
+      </section>
+      <section>
+        <img src="/img/Portfolio.png" alt="Screenshot of my website" width="350" height="200"/>
+        <button onclick="doSomething4()">Description</button>
+
+        <p id="desc4">Click the Description button above to show the description</p>
+    
+        <script>
+            function doSomething4(){
+                document.getElementById("desc4").innerHTML = "I have made my website with a portfolio structure to give you an idea of who i am";
+            }
+        </script>
+      </section>
+      <section>
+        <img src="/img/Feature screenshot.png" alt="Screenshot of my feature" width="350" height="200"/>
+        <button onclick="doSomething5()">Description</button>
+
+        <p id="desc5">Click the Description button above to show the description</p>
+    
+        <script>
+            function doSomething5(){
+                document.getElementById("desc5").innerHTML = "Check out my simple feature which allows you to choose a random colour";
+            }
+        </script>
+      </section>
+  </main>
+    <nav>
+      <a href="#1">Hobby Page</a>
+      <a href="#2">Comment Box</a>
+      <a href="#3">Movie Data</a>
+      <a href="#4">Website</a>
+      <a href="#5">Feature</a>
+  </nav>
+  <footer>JAG, 2022</footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<body>
+    <form action="results.html" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name" id="name" placeholder="John Smith" required> 
+        </div>
+       <div>
+            <label>
+                E-mail
+                <input type="email" name="email" required>
+            </label>
+       </div>
+
+    </form>
+</body>
+
+<!-- type and id help identify which element exactly you mean -->
+<form>
+    <h3>Write your comment here: </h3>
+    <textarea name="tweet" id="textbox" class="form-control" rows="10" cols="60"></textarea>
+    <span id="char_count">140/140</span>
+
+    <button type="reset">Reset</button> 
+    <br>
+    <button type="submit" onclick="myFunction()">Submit</button>
+
+</form>
+
+<p id="demo"></p>
+
+
+<script>
+    let textArea = document.getElementById("textbox");
+let characterCounter = document.getElementById("char_count");
+const maxNumOfChars = 140;
+
+const countCharacters = () => {
+        let numOfEnteredChars = textArea.value.length;
+    let counter = maxNumOfChars - numOfEnteredChars;
+    characterCounter.textContent = counter + "/140";
+
+    // if/else used to notify character count 
+      if (counter < 0) {
+        characterCounter.style.color = "red";
+    } else if (counter < 20) {
+        characterCounter.style.color = "orange";
+    } else {
+        characterCounter.style.color = "black";
+    }
+};
+
+textArea.addEventListener("input", countCharacters);
+
+function myFunction() {
+    var x = document.getElementById("textbox").value;
+    document.getElementById("demo").innerHTML = x;
+}
+
+</script>
+
+<!-- css -->
+<style>
+body{
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+
+textarea{
+    padding:30px;
+    border-radius:5px;
+}
+
+button{
+    background-color:#000000;
+    border:none;
+    padding:5px 10px;
+    color:#fff;
+    font-weight:bold;
+    border-radius:30px;
+    display:block;
+    font-weight: 500;
+}
+
+div{
+    padding-left: 3px;
+}
+
+input{
+    margin-top: 5px;
+}
+
+span{
+    margin:5px 10px 10px;
+    text-align:right;
+    font-weight:bold;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+</style>

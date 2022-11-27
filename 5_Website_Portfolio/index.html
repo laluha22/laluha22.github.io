@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tried different fonts -->
+    <script src="https://kit.fontawesome.com/58f5deafd8.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <section class="hero">
+        <nav>
+            <img class="logo" src="src/images/Screenshot 2022-11-10 at 19.30.53.png" alt="java logo"/>
+            <ul id="nav-list">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- button when screen gets small -->
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="hero-area">
+            <div class="hero-text">
+                <h1>James Gregory</h1>
+                <p>Wannabe Developer</p>
+                <div class="button"><a href="#about-me">About Me</a></div>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/laluha22/Portfolio" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="70" height="70" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
+        </div>
+
+       
+    </section>    
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>James (he/him) <br> <br> Hello! <br> My names is James and I am 31. My academic background is in Geology, but I have been working in a piano business since my early twenties. I have decided that it is time to close that chapter of my life and focus on changing to a career that is more aligned with my personal interests. </p>
+            <br>
+        </div>
+        <div class="headshot-container"></div>
+            <img class="headshot" src="src/images/Screenshot 2022-11-10 at 19.30.53.png" widtth="300" height="500" alt="James avatar"/> 
+    </section>
+    <section class="sub-section2" id="why-applying">
+        <div><h2>Why am I applying?</h2>
+        <p>I would like to participate in Founders and Coders as I am looking for a change of career. Starting a new life-path in my 30s can be very daunting, but I am very eager to learn. I consider myself to be very adaptive and open-minded, and despite having no background in coding, I have made minor progress in learning the basics of programming in my free time using various resources provided by Founders and Coders. I have also tirelessly scoured the web for additional learning materials to help me get on track. Despite this, I am a firm believer in guided education and learning from professionals, which is why I would like to opt for a more organised approach to learning. I have had very limited time to complete the challenges as I currently work full-time, with many hours of overtime. All in all, I want to turn my life around and do something I really enjoy!</p>
+        </div>        
+    </section>
+    <section class="sub-section-alternative" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="src/images/Spooky Lakes page.png" alt="Hobby Page"/>
+                <h3>Hobby Page</h3>
+                <p class="subtext">On my hobby page i show you some spooky lakes from around the world.</p>
+                <hr/>
+                <p class="subtext"><a href="file:///Users/jamesgregory/Documents/GitHub/SPOOKY-LAKES/Spooooky%20Lakes.html"></a></p>
+                <p class="subtext"><a href="https://github.com/laluha22/1.-Hobby-Page">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/project gallery screenshot.png" alt="Project Gallery"/>
+                <h3>Project Gallery</h3>
+                <p class="subtext">This page shows you my different projects using display cards and flexbox.</p>
+                <hr/>
+                <p class="subtext"><a href="https://github.com/laluha22/2.-Project-Gallery">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/comment box screenshot.png" alt="Comment Box"/>
+                <h3>Comment Box</h3>
+                <p class="subtext">Check out my comment box which allows you to input some data. Including name, email and comment.</p>
+                <hr/>
+                <p class="subtext"><a href="https://github.com/laluha22/3.-Comment-Box">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/moveidata screenshot.png" alt="Movie Data"/>
+                <h3>Movie Data</h3>
+                <p class="subtext">Here you will find a selection of my favourite films by Wes Anderson.</p>
+                <hr/>
+                <p class="subtext"><a href="https://github.com/laluha22/4.-Movie-Data">View Here</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <h2>Contact me</h2>
+        <p>jamesalangregory1@gmail.com</p>
+
+        <h4>Feature:</h4>
+        <p>- find button to change footer colour -</p>
+
+    </footer>
+    
+    <script src="src/app.js"></script>
+</body>
+</html>

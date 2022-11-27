@@ -2,6 +2,7 @@
 
 # Founders and Coders Application
 
+November 2022
 
 
 Project 1: Check out my [Hobby Page](https://laluha22.github.io/1-Hobby-Page)

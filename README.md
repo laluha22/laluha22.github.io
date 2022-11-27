@@ -4,7 +4,7 @@
 
 
 
-Project 1: Check out my [Hobby Page](https://laluha22.github.io/1.-Hobby-Page/)
+Project 1: Check out my [Hobby Page](https://laluha22.github.io/1-Hobby-Page)
 
 Project 2: Check out my [Project Gallery](https://laluha22.github.io/2.-Project-Gallery)
 
